@@ -1,382 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+      crossorigin="anonymous"
+    />
+
+    <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <title>My Portfolio | Agil Setyo Anggoro</title>
   </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #0c5374">
+      <div class="container">
+        <a class="navbar-brand" href="#">Agil Setyo </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <img srcset="agil.png" alt="Agil Setyo Anggoro" width="400" class="rounded-circle img-thumbnail" />
+     <br>
+     <br>   <br>
+    <h2>Hello There 👋, I'm</h2>
+    <h1 class="display-4" style="font-weight: bold; font-size: 48px;">Agil Setyo Anggoro</h1>
+      <p class="lead">moto</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,128L30,138.7C60,149,120,171,180,186.7C240,203,300,213,360,213.3C420,213,480,203,540,176C600,149,660,107,720,122.7C780,139,840,213,900,213.3C960,213,1020,139,1080,122.7C1140,107,1200,149,1260,176C1320,203,1380,213,1410,218.7L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
     </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- About -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col" data-aos="fade-down">
+            <h1 style="font-size: 60px; font-family: 'Poppins', sans-serif; font-weight: bold;">About Me</h1>
           </div>
-          <div class="text-container">
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="row justify-content-center" data-aos="fade-right">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              I am a fresh graduate in statistics from Diponegoro University with experience in data analysis, risk management, teamwork, and completing data-related projects. I have a strong interest and desire to work in the fields of Data Analytics, Financial Analysis, and Risk Management. Thoroughly likes to learn new things and has good data analysis. I got this ability when I joined organizations on campus and experienced it during internships. So, I am looking for an opportunity as a Data Analyst, Data Scientist, or Business Analyst.
             </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0c5374"
+          fill-opacity="1"
+          d="M0,160L48,165.3C96,171,192,181,288,208C384,235,480,277,576,266.7C672,256,768,192,864,176C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+    <!-- Akhir About -->
+
+    <!-- Projects -->
+    <section id="projects" style="background-color: #0c5374">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col" style="margin-bottom: 70px">
+            <h1 style="color: white; font-size: 60px; font-family: 'Poppins', sans-serif; font-weight: bold;">My Projects</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3" data-aos="flip-right">
+            <div class="card">
+              <img src="img/2.jpg" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <p class="card-text">
+                  <a href="https://drive.google.com/file/d/18MvScHBurIOED3tIuGbEcd90R-R2N24m/view?usp=share_link" class="text-dark fw-bold">1/4 Abad menuju Indonesia Emas 2045, Indonesia udah ngapain aja ya?</a>
+                </p>
+              </div>
             </div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+          <div class="col-md-4 mb-3" data-aos="flip-right" data-aos-delay="1000">
+            <div class="card">
+              <img src="img/1.jpg" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <p class="card-text"><a href="https://drive.google.com/file/d/1hzggyHTBxJceg6H4RQgD-q2CJRw-TxQ_/view?usp=share_link" class="text-dark fw-bold">Pemulihan Ekonomi Indonesia di masa transisi pandemi Covid-19 sektor parawisita.</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="flip-right" data-aos-delay="500">
+            <div class="card">
+              <img src="img/3.jpg" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <p class="card-text">
+                  <a href="https://drive.google.com/file/d/1D-n0pISyn6bvTro0gwO4iPprXEpUtalc/view?usp=share_link" class="text-dark fw-bold">Digitalisasi UMKM Sukseskan Indonesia bangkit dari Pandemi dalam pemulihan ekonomi nasional?</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="flip-right" data-aos-delay="1000">
+            <div class="card">
+              <img src="img/4.jpg" class="card-img-top" alt="Project 4" />
+              <div class="card-body">
+                <p class="card-text">
+                  <a href="https://github.com/agilsetyo/Project-Kuliah/tree/main/GUI-R%20Aplikasi%20untuk%20menghitung%20Regresi%20Linear%20Sederhana%20dan%20Uji%20Korelasi." class="text-dark fw-bold"
+                    >APLIKASI R-GUI: menghitung Regresi Linear Sederhana dan Uji Korelasi.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="flip-right" data-aos-delay="500">
+            <div class="card">
+              <img src="img/5.jpg" class="card-img-top" alt="Project 5" />
+              <div class="card-body">
+                <p class="card-text">
+                  <a href="https://github.com/agilsetyo/Project-Kuliah/tree/main/GUI-MATLAB%20Aplikasi%20Untuk%20Menghitung%20Regresi%20Linear%20Sederhana%20dan%20Aplikasi%20kalkulator." class="text-dark fw-bold">
+                    APLIKASI MATLAB-GUI: Menghitung Regresi Linear Sederhana dan Aplikasi kalkulator.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="flip-right" data-aos-delay="1000">
+            <div class="card">
+              <img src="img/6.jpg" class="card-img-top" alt="Project 6" />
+              <div class="card-body">
+                <p class="card-text">
+                  <a href="https://agilsetyo.shinyapps.io/KMV_MERTON/?_ga=2.178573348.189039518.1667202436-679480766.1667202436" class="text-dark fw-bold">APLIKASI R-GUI: Model KMV Merton Pengukuran Nilai Risiko Kredit Obligasi.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3" data-aos="flip-right" data-aos-delay="500">
+            <div class="card">
+              <img src="img/7.jpg" class="card-img-top" alt="Project 7" />
+              <div class="card-body">
+                <p class="card-text">
+                  <a href="https://public.tableau.com/views/DATACOVID19DIINDONESIATAHUN2022/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" class="text-dark fw-bold">Dashboard Covid 19 di Indonesia tahun 2022.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3" data-aos="flip-right" data-aos-delay="1000">
+            <div class="card">
+              <img src="img/8.jpg" class="card-img-top" alt="Project 8" />
+              <div class="card-body">
+                <p class="card-text">
+                  <a href="https://medium.com/@agilsetyo/risiko-investasi-dengan-value-at-risk-metode-varians-kovarians-2485b799c453" class="text-dark fw-bold">Menghitung Risiko Investasi dalam Portofolio Saham (Sektor Keuangan).</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,128L30,138.7C60,149,120,171,180,186.7C240,203,300,213,360,213.3C420,213,480,203,540,176C600,149,660,107,720,122.7C780,139,840,213,900,213.3C960,213,1020,139,1080,122.7C1140,107,1200,149,1260,176C1320,203,1380,213,1410,218.7L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
+    <!-- Akhir Projects -->
+
+    <!-- Contact -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      <div class="container">
+        <div class="row text-center pd-3">
+          <div class="col">
+              <h5 style="font-size: 20px;">Get in Touch</h5>
+              <h1 style="font-size: 65px; font-family: 'Poppins', sans-serif; font-weight: bold;">Contact Me</h1>
+            </div>
+            <div id="socials-container">
+              <img
+                src="./img/linkedin.png"
+                alt="My LinkedIn profile" width="40" 
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/agilsetyoanggoro/'"
+              />
+              <img
+              src="./img/email.png"
+              alt="My Github profile" width="40" 
+              class="icon"
+              onclick="location.href='https://github.com/'"
+              />
+              <img
+                src="./img/github.png"
+                alt="My Github profile" width="40" 
+                class="icon"
+                onclick="location.href='https://github.com/agilsetyo'"
+              />
+            </div>
+    
+          </div>
+          <br>
+           <br>
+      </div>      
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="wpu-contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0ea1a4"
+          fill-opacity="1"
+          d="M0,32L21.8,37.3C43.6,43,87,53,131,90.7C174.5,128,218,192,262,202.7C305.5,213,349,171,393,160C436.4,149,480,171,524,186.7C567.3,203,611,213,655,218.7C698.2,224,742,224,785,208C829.1,192,873,160,916,154.7C960,149,1004,171,1047,192C1090.9,213,1135,235,1178,213.3C1221.8,192,1265,128,1309,106.7C1352.7,85,1396,107,1418,117.3L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+        ></path>
+      </svg>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <footer class="text-white text-center pb-5" style="background-color: #0ea1a4">
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://lynk.id/agilsetyo" class="text-white fw-bold">Agil Setyo</a></p>
+      <p>Copyright © 2023. All Rights Reserved</p>
     </footer>
-    <script src="script.js"></script>
+    <!-- Akhir Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.from(".img-thumbnail", { duration: 2, rotationX: 360 });
+      gsap.from(".navbar", { duration: 1.5, opacity: 0, y: "-100%", ease: "bounce" });
+      gsap.from(".display-4", { delay: 1, duration: 1, opacity: 0, x: "-10%" });
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { delay: 1.5, duration: 2, text: "Dream high because our only limits its our minds." });
+
+      const galleryImages = document.querySelectorAll(".gallery-img");
+      const delayTimes = [0, 50, 100, 150, 200, 250, 300, 350, 400, 450];
+
+      function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+        }
+        return array;
+      }
+      const newDelay = shuffleArray(delayTimes);
+      galleryImages.forEach((img, i) => {
+        img.dataset.aos = "fade-up";
+        img.dataset.aosDelay = i * 50 + "";
+        // img.dataset.aosDelay = newDelay[i];
+      });
+
+      AOS.init({
+        once: true,
+        duration: 3000,
+      });
+    </script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbw3CpUNzGFtjX7HQ3OxzyM1ZKVr0Xz1_dyX-3KuwqGYq2blM7BLRKyRaDDt753qtD1dFw/exec";
+      const form = document.forms["wpu-contact-form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // tampilkan alert
+            myAlert.classList.toggle("d-none");
+            // reset formnya
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 35,
+        speed: 1000,
+        glare: true,
+      });
+    </script>
   </body>
 </html>
