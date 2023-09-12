@@ -30,3 +30,37 @@ section {
   margin-top: 1rem;
   gap: 2rem;
 }
+
+.col-md-6 {
+  width: 80%; /* Ubah persentase sesuai dengan keinginan Anda */
+  margin: 0 auto; /* Untuk membuatnya berada di tengah */
+}
+
+
+  /* Mengubah warna latar belakang dan lebar tombol Kirim */
+  .btn-kirim {
+    background-color: #0c5374; /* Warna latar belakang hijau */
+    width: 100%; /* Mengatur lebar menjadi 100% dari parent */
+    padding: 10px; /* Menambahkan padding untuk membuat tombol lebih tinggi */
+    color: white; /* Warna teks putih */
+    border: none; /* Menghilangkan border */
+    border-radius: 20px; /* Menambahkan radius border */
+  }
+
+    /* Mengubah input dan textarea menjadi bulat */
+    .form-control {
+      border-radius: 20px; /* Menambahkan radius border */
+    }
+
+/* Mengubah tampilan gambar menjadi rounded */
+  .card-img-top {
+    border-radius: 20%; /* Membuat gambar menjadi bulat */
+  }
+
+/* Mengubah tampilan gambar menjadi rounded */
+.card {
+   border-radius: 1%; /* Membuat gambar menjadi bulat */
+   background-color: #0c5374; /* Warna latar belakang hijau */
+   border: none; /* Menghapus border */
+   box-shadow: none; /* Menghapus box-shadow */
+}
