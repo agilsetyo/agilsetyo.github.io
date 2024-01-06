@@ -5,7 +5,6 @@ body {
   min-height: 3000px;
 }
 
-
 p {
   font-family: 'Open Sans', sans-serif;
 }
@@ -16,12 +15,24 @@ p {
 
 .jumbotron {
   padding-top: 5rem;
-  background-color: #0ea1a4;
+  background-image: linear-gradient(to bottom, #9578ff, #000957);
 }
 
 section {
   padding-top: 4rem;
 }
+
+
+.lead {
+    color: white;
+}
+
+  .row p {
+    font-family: Helvetica, sans-serif;
+    text-align: justify;
+    /* Ganti 'Arial' dengan jenis font yang Anda inginkan */
+    /* 'sans-serif' adalah jenis font cadangan yang akan digunakan jika jenis font utama tidak tersedia */
+  }
 
 
 #socials-container {
@@ -32,17 +43,17 @@ section {
 }
 
 .col-md-6 {
-  width: 80%; /* Ubah persentase sesuai dengan keinginan Anda */
+  width: 80%;  Ubah persentase sesuai dengan keinginan Anda */
   margin: 0 auto; /* Untuk membuatnya berada di tengah */
 }
 
 
   /* Mengubah warna latar belakang dan lebar tombol Kirim */
   .btn-kirim {
-    background-color: #0c5374; /* Warna latar belakang hijau */
+    background-image:#9578ff; /* Warna latar belakang hijau */
     width: 100%; /* Mengatur lebar menjadi 100% dari parent */
     padding: 10px; /* Menambahkan padding untuk membuat tombol lebih tinggi */
-    color: white; /* Warna teks putih */
+    color: rgb(255, 255, 255); /* Warna teks putih */
     border: none; /* Menghilangkan border */
     border-radius: 20px; /* Menambahkan radius border */
   }
@@ -58,9 +69,10 @@ section {
   }
 
 /* Mengubah tampilan gambar menjadi rounded */
+
 .card {
-   border-radius: 1%; /* Membuat gambar menjadi bulat */
-   background-color: #0c5374; /* Warna latar belakang hijau */
-   border: none; /* Menghapus border */
-   box-shadow: none; /* Menghapus box-shadow */
+  border-radius: 1%;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
