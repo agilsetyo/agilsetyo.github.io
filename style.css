@@ -50,7 +50,7 @@ section {
 
   /* Mengubah warna latar belakang dan lebar tombol Kirim */
   .btn-kirim {
-    background-image:#9578ff; /* Warna latar belakang hijau */
+    background-image:#515BD4; /* Warna latar belakang hijau */
     width: 100%; /* Mengatur lebar menjadi 100% dari parent */
     padding: 10px; /* Menambahkan padding untuk membuat tombol lebih tinggi */
     color: rgb(255, 255, 255); /* Warna teks putih */
