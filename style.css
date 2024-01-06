@@ -1,7 +1,16 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 body {
   min-height: 3000px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
 }
 
 .jumbotron {
@@ -12,6 +21,7 @@ body {
 section {
   padding-top: 4rem;
 }
+
 
 .lead {
     color: white;
@@ -24,6 +34,7 @@ section {
     /* 'sans-serif' adalah jenis font cadangan yang akan digunakan jika jenis font utama tidak tersedia */
   }
 
+
 #socials-container {
   display: flex;
   justify-content: center;
@@ -35,6 +46,7 @@ section {
   width: 80%;  Ubah persentase sesuai dengan keinginan Anda */
   margin: 0 auto; /* Untuk membuatnya berada di tengah */
 }
+
 
   /* Mengubah warna latar belakang dan lebar tombol Kirim */
   .btn-kirim {
