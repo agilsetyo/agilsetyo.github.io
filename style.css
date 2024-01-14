@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 body {
@@ -14,8 +13,8 @@ p {
 }
 
 .jumbotron {
-  padding-top: 5rem;
-  background-image: linear-gradient(to bottom, #9578ff, #000957);
+  padding-top: 7rem;
+  background-image: linear-gradient(to bottom, #58f1f1, #021027);
 }
 
 section {
@@ -43,7 +42,7 @@ section {
 }
 
 .col-md-6 {
-  width: 80%;  Ubah persentase sesuai dengan keinginan Anda */
+  width: 90%;  Ubah persentase sesuai dengan keinginan Anda */
   margin: 0 auto; /* Untuk membuatnya berada di tengah */
 }
 
